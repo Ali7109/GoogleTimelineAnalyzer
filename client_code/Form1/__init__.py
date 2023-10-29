@@ -25,7 +25,8 @@ class Form1(Form1Template):
       self.data_view = "Error in fetching"
     
   def file_loader_1_change(self, file, **event_args):
-      result = anvil.server.call('my_image_classifier', file)
+    result = anvil.server.call('process_file', file)
+    # print(result)
     
 
     

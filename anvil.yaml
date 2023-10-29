@@ -5,6 +5,8 @@ startup_form: Form1
 uplink_visible: true
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
+metadata: {title: Google Timeline Analyzer, description: This app analyzes your Google Maps history and provides valuable insight on your travel patterns.,
+  logo_img: 'asset:GTALogo.jpeg'}
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
