@@ -130,6 +130,7 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+  components: []
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: Google Maps Timeline Analyzer, font_size: null, font: '', spacing_above: small,
