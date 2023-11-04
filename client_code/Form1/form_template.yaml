@@ -4,9 +4,9 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-    spacing_below: small, background: ''}
+  properties: {role: null, tooltip: '', border: '', foreground: 'theme:Primary 500',
+    visible: true, wrap_on: mobile, col_spacing: medium, spacing_above: medium, col_widths: '{}',
+    spacing_below: medium, background: ''}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -84,32 +84,48 @@ components:
           enabled: true, foreground: '', visible: true, text: Get Number of Travels,
           font_size: null, font: '', spacing_above: large, icon_align: left, spacing_below: large,
           italic: false, background: '', bold: false, underline: false, icon: ''}
-        name: process_button
+        name: number_of_travels
         layout_properties: {grid_position: 'LAWCLK,CQZTQL'}
-        event_bindings: {click: process_button_click}
-      - type: ColumnPanel
-        properties: {role: card, col_widths: '{}'}
-        name: card_1_copy
-        layout_properties:
-          col_widths: {}
-          grid_position: BNRNGK,ECBLXK
-        components:
-        - type: TextBox
-          properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Entries to,
-            border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-            font: '', spacing_above: large, type: text, spacing_below: small, italic: false,
-            background: '', bold: false, underline: false}
-          name: entries_to_input
-          layout_properties: {grid_position: 'LAWCLK,QOICQX'}
-          event_bindings: {pressed_enter: to_input_copy_pressed_enter}
-        - type: Button
-          properties: {role: primary-color, align: center, tooltip: '', border: '',
-            enabled: true, foreground: '', visible: true, text: Get Number of entries,
-            font_size: null, font: '', spacing_above: large, icon_align: left, spacing_below: large,
-            italic: false, background: '', bold: false, underline: false, icon: ''}
-          name: entries_button
-          layout_properties: {grid_position: 'LAWCLK,CQZTQL'}
-          event_bindings: {click: process_button_click}
+        event_bindings: {click: number_of_travels_click}
+      - type: TextBox
+        properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Entries to,
+          border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+          font: '', spacing_above: large, type: text, spacing_below: small, italic: false,
+          background: '', bold: false, underline: false}
+        name: entries_input
+        layout_properties: {grid_position: 'NCIMKH,YCFJFB'}
+        event_bindings: {pressed_enter: to_input_copy_pressed_enter}
+      - type: Button
+        properties:
+          role: [primary-color]
+          align: center
+          tooltip: ''
+          border: ''
+          enabled: true
+          foreground: ''
+          visible: true
+          text: Get Number of entries
+          font_size: null
+          font: ''
+          spacing_above: large
+          icon_align: left
+          spacing_below: large
+          italic: false
+          background: ''
+          bold: false
+          underline: false
+          icon: ''
+        name: entries_button
+        layout_properties: {grid_position: 'NCIMKH,GIVBIO', full_width_row: false}
+        event_bindings: {click: entries_button_click}
+      - name: output_title
+        properties: {role: headline, text: 'Data Returned:', visible: false}
+        type: Label
+        layout_properties: {grid_position: 'RITFTS,WAUVGS'}
+      - name: output_label_showcase
+        properties: {visible: false}
+        type: Label
+        layout_properties: {grid_position: 'WJVDZR,CIERCK'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
