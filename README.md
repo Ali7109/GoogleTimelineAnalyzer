@@ -11,13 +11,9 @@
 
 ## Usage
 
-1. **Login**: Sign in to the app using your Anvil account credentials.
+1. **Import Data**: Import your Google Maps Timeline data by following the on-screen instructions.
 
-2. **Import Data**: Import your Google Maps Timeline data by following the on-screen instructions.
-
-3. **Analyze Data**: Gain insights into your location history, including the number of entries to specific places and your travels to and from certain locations.
-
-4. **Visualization**: Explore the app's visualization features to better understand your location history.
+2. **Analyze Data**: Gain insights into your location history, including the number of entries to specific places and your travels to and from certain locations.
 
 ## License
 
